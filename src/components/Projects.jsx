@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div>
+    <div className="h-screen" id="projects">
       <h1>Projects</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit

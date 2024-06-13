@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <div>
+    <div className="h-screen" id="skills">
       <h1>Skills</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit

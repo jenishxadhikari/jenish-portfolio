@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>
+    <div className="h-screen" id="contact">
       <h1>Contact</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit

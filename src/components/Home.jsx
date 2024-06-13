@@ -1,6 +1,9 @@
+import NavBar from "./NavBar";
+
 function Home() {
   return (
-    <div>
+    <div className="h-screen" id="home">
+      <NavBar/>
       <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit

@@ -1,6 +1,6 @@
 function About() {
     return (
-      <div>
+      <div className="h-screen" id="about">
         <h1>About</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit
