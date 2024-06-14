@@ -1,4 +1,5 @@
 import {
+  NavBar,
   Home,
   About,
   Skills,
@@ -10,6 +11,7 @@ import {
 function Main() {
   return (
     <>
+      <NavBar />
       <Home />
       <About />
       <Skills />

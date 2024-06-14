@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
@@ -9,31 +10,37 @@ function NavBar() {
     { name: "Contact", link: "contact" },
   ];
 
-  return (
-    <header className="w-full border-b bg-white pb-4 flex justify-between fixed p-4">
+  const Navlink = ({ children, link }) => (
+    <li className="list-none px-3 py-1 text-lg hover:rounded-lg hover:bg-slate-800">
       <ScrollLink
-        to="home"
         spy={true}
         smooth={true}
-        offset={-80}
         duration={400}
+        offset={-80}
+        to={link}
       >
-        <h3>Jenish Adhikari</h3>
+        {children}
       </ScrollLink>
-      <nav>
+    </li>
+  );
+
+  Navlink.propTypes = {
+    children: PropTypes.node.isRequired,
+    link: PropTypes.string.isRequired,
+  };
+
+  return (
+    <header className="sticky top-0 flex w-full content-center justify-between bg-slate-950 px-16 py-5 text-white">
+      <Navlink link={"home"}>
+        <h3 className="font-bold sm:p-0 sm:text-center">Jenish Adhikari</h3>
+      </Navlink>
+
+      <nav className="flex gap-6">
         <ul className="flex gap-4">
           {menuItems.map((item) => (
-            <li key={item.name}>
-              <ScrollLink
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-80}
-                to={item.link}
-              >
-                {item.name}
-              </ScrollLink>
-            </li>
+            <Navlink key={item.link} link={item.link}>
+              {item.name}
+            </Navlink>
           ))}
         </ul>
       </nav>
