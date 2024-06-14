@@ -11,7 +11,7 @@ function NavBar() {
   ];
 
   const Navlink = ({ children, link }) => (
-    <li className="list-none px-3 py-1 text-lg hover:rounded-lg hover:bg-slate-800">
+    <li className="list-none px-3 py-2 text-sm hover:rounded-lg hover:bg-gray-800">
       <ScrollLink
         spy={true}
         smooth={true}
@@ -30,9 +30,9 @@ function NavBar() {
   };
 
   return (
-    <header className="sticky top-0 flex w-full content-center justify-between bg-slate-950 px-16 py-5 text-white">
+    <header className="sticky top-0 flex w-full content-center justify-between bg-gray-900 px-16 py-3 text-white">
       <Navlink link={"home"}>
-        <h3 className="font-bold sm:p-0 sm:text-center">Jenish Adhikari</h3>
+        <h3 className="font-semibold text-md">Jenish Adhikari</h3>
       </Navlink>
 
       <nav className="flex gap-6">
