@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { Link as ScrollLink } from "react-scroll";
-
 function NavBar() {
   const menuItems = [
     { name: "About me", link: "about" },
@@ -11,13 +10,14 @@ function NavBar() {
   ];
 
   const Navlink = ({ children, link }) => (
-    <li className="list-none px-3 py-2 text-sm hover:rounded-lg hover:bg-gray-800">
+    <li className="list-none px-3 py-2 text-sm hover:cursor-pointer hover:rounded-lg hover:bg-slate-700">
       <ScrollLink
         spy={true}
         smooth={true}
         duration={400}
         offset={-80}
         to={link}
+        activeClass="border-b-2 pb-1 border-cyan-400"
       >
         {children}
       </ScrollLink>
@@ -30,7 +30,7 @@ function NavBar() {
   };
 
   return (
-    <header className="sticky top-0 flex w-full content-center justify-between bg-backgroundColor px-16 py-3 text-white">
+    <header className="sticky top-0 flex w-full content-center justify-between bg-slate-900 px-16 py-3 text-white">
       <Navlink link={"home"}>
         <h3 className="text-md font-semibold">Jenish Adhikari</h3>
       </Navlink>
