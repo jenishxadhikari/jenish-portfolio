@@ -30,9 +30,9 @@ function NavBar() {
   };
 
   return (
-    <header className="sticky top-0 flex w-full content-center justify-between bg-gray-900 px-16 py-3 text-white">
+    <header className="sticky top-0 flex w-full content-center justify-between bg-backgroundColor px-16 py-3 text-white">
       <Navlink link={"home"}>
-        <h3 className="font-semibold text-md">Jenish Adhikari</h3>
+        <h3 className="text-md font-semibold">Jenish Adhikari</h3>
       </Navlink>
 
       <nav className="flex gap-6">
