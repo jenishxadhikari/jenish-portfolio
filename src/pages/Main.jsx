@@ -13,7 +13,7 @@ function Main() {
   return (
     <>
       <NavBar />
-      <main className="-z-30 h-full bg-[#242424] bg-[radial-gradient(#ffffff33_1px,#1A1F2D_1px)] bg-[size:30px_30px]">
+      <main className="-z-50 flex h-full flex-col items-center bg-[#242424] bg-[radial-gradient(#ffffff33_1px,#1A1F2D_1px)] bg-[size:30px_30px]">
         <Home />
         <About />
         <Skills />
