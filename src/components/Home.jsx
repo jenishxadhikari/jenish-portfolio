@@ -1,6 +1,7 @@
 import TypewriterComponent from "typewriter-effect";
 import { Socials } from "../components";
 import { MdArrowOutward } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Home() {
   return (
@@ -26,9 +27,14 @@ function Home() {
       <div className="mb-6 flex items-center gap-5 text-2xl">
         <Socials />
       </div>
-      <button className="text-md font-semibold rounded-full border border-solid border-sky-400 px-5 py-2 text-cyan-400 hover:bg-cyan-400/10">
+      <button className="text-md rounded-full border border-solid border-sky-400 px-5 py-2 font-semibold text-cyan-400 hover:bg-cyan-400/10">
         Resume <MdArrowOutward className="inline text-xl" />
       </button>
+      <div className="mt-10">
+        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-100 duration-400" />
+        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-300 duration-400" />
+        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-700 duration-400" />
+      </div>
     </article>
   );
 }
