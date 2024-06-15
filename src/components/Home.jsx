@@ -9,7 +9,7 @@ function Home() {
       className="flex h-screen w-full flex-col items-center pt-36"
       id="home"
     >
-      <h1 className="font-sembold self-center text-5xl">
+      <h1 className="self-center text-5xl font-medium">
         <TypewriterComponent
           options={{
             strings: ["Jenish Adhikari"],
@@ -31,9 +31,9 @@ function Home() {
         Resume <MdArrowOutward className="inline text-xl" />
       </button>
       <div className="mt-10">
-        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-100 duration-400" />
-        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-300 duration-400" />
-        <IoIosArrowDown className="animate-ping text-4xl text-cyan-400/70 delay-700 duration-400" />
+        <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-100" />
+        <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-300" />
+        <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-700" />
       </div>
     </article>
   );
