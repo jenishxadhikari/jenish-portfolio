@@ -7,5 +7,17 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Socials from "./ui/Socials";
+import Card from "./ui/Card";
 
-export { NavBar, Home, About, Skills, Experience, Projects, Contact, Footer, Socials };
+export {
+  NavBar,
+  Home,
+  About,
+  Skills,
+  Experience,
+  Projects,
+  Contact,
+  Footer,
+  Socials,
+  Card,
+};

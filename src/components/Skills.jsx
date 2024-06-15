@@ -1,17 +1,16 @@
+import { Card } from "../components";
+
 function Skills() {
   return (
-    <div className="h-screen" id="skills">
-      <h1>Skills</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit
-        explicabo veritatis beatae labore reprehenderit voluptate accusamus
-        corrupti porro ea quis numquam quasi veniam aut, eum obcaecati nihil
-        dolore rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nostrum est similique recusandae officia fuga. A qui, voluptate saepe
-        sequi eos vitae, possimus ipsa facere tempora quas quo dolorem debitis
-        alias!
-      </p>
-    </div>
+    <section className="h-screen w-9/12 pt-10" id="skills">
+      <h1 className="text-center text-4xl font-medium">Skills</h1>
+      <div className="mt-10 flex gap-10">
+        <Card title={'Languages'} />
+        <Card title={'Framework'} />
+        <Card title={'Database'} />
+        <Card title={'Tools'} />
+      </div>
+    </section>
   );
 }
 
