@@ -8,7 +8,8 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        backgroundColor: "#1A1F2D",
+        navBg: "#171923",
+        navHover: "#292b34",
       },
     },
   },
