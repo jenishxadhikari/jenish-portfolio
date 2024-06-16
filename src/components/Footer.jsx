@@ -4,19 +4,23 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Footer() {
   return (
-    <footer className="flex w-full items-center justify-between gap-10 bg-slate-900 px-16 py-6 text-sm text-white">
-      <h3>© {new Date().getFullYear()} Jenish Adhikari</h3>
-      <div className="flex items-center gap-5 text-2xl">
-        <Socials />
-        <ScrollLink
-          spy={true}
-          smooth={true}
-          duration={400}
-          offset={-80}
-          to={"home"}
-        >
-          <IoIosArrowDropup className="ml-6 text-4xl text-cyan-400" />
-        </ScrollLink>
+    <footer className="bg-navBg flex w-full items-center justify-center py-4 text-white">
+      <div className="flex w-10/12 items-center justify-between">
+        <span className="text-xs md:text-md font-medium">
+          © {new Date().getFullYear()} Jenish Adhikari
+        </span>
+        <div className="text-md flex items-center justify-end gap-2 md:gap-6 md:text-2xl">
+          <Socials />
+          <ScrollLink
+            spy={true}
+            smooth={true}
+            duration={400}
+            offset={-80}
+            to={"home"}
+          >
+            <IoIosArrowDropup className="ml-6 text-xl text-cyan-400 md:text-4xl" />
+          </ScrollLink>
+        </div>
       </div>
     </footer>
   );
