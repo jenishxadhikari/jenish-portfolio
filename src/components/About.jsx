@@ -3,15 +3,20 @@ import { useLoaderData } from "react-router-dom";
 function About() {
   const data = useLoaderData();
   return (
-    <section className="h-screen w-9/12 pt-10" id="about">
-      <h1 className="text-center text-4xl font-medium">About me</h1>
-      <div className="mt-16 flex items-center gap-24">
+    <section
+      className="h-screen w-full pt-8  text-white md:flex md:flex-col md:pt-14"
+      id="about"
+    >
+      <h1 className="text-center text-3xl font-medium  md:text-4xl">
+        About me
+      </h1>
+      <div className="mt-10 flex flex-col items-center gap-8 md:w-9/12 md:flex-row md:self-center">
         <img
           src={data.avatar_url}
           alt="My picture"
-          className="h-36 w-36 flex-1 rounded-full border-4 border-indigo-200"
+          className="h-24 w-24 rounded-full border-4 border-indigo-200 md:h-36 md:w-36"
         />
-        <ul>
+        <ul className="w-10/12 md:w-full">
           <div className="mb-6 flex items-center">
             <span className="mr-3 text-lg">👋🏼</span>
             <li>
