@@ -1,14 +1,14 @@
 import { Main, Project, ProjectPage } from "./pages";
 import {
   Route,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
 import { githubInfoLoader } from "./hooks/GithubInfoLoader";
 
 function App() {
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route path="/">
         <Route path="" loader={githubInfoLoader} element={<Main />} />,
