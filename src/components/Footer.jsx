@@ -4,9 +4,9 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Footer() {
   return (
-    <footer className="bg-navBg flex w-full items-center justify-center py-4 text-white">
+    <footer className="flex w-full items-center justify-center bg-navBg py-4 text-white">
       <div className="flex w-10/12 items-center justify-between">
-        <span className="text-xs md:text-md font-medium">
+        <span className="md:text-md text-xs font-medium">
           © {new Date().getFullYear()} Jenish Adhikari
         </span>
         <div className="text-md flex items-center justify-end gap-2 md:gap-6 md:text-2xl">

@@ -1,13 +1,13 @@
 function Contact() {
   return (
     <section
-      className="flex h-fit w-full flex-col items-center py-12 text-white md:pt-10"
+      className="flex h-fit w-full flex-col items-center pb-12 pt-20 text-white"
       id="contact"
     >
       <h1 className="text-center text-3xl font-medium md:text-4xl">
         Contact me
       </h1>
-      <div className="bg-slate-900 mt-5 flex w-9/12 flex-col items-center justify-center gap-10 rounded-2xl px-20 py-10 md:w-fit md:flex-row">
+      <div className="mt-12 flex w-9/12 flex-col items-center justify-center gap-10 rounded-2xl bg-slate-900 px-20 py-10 md:w-fit md:flex-row">
         <div className="flex w-fit flex-col items-center md:w-6/12">
           <span className="mb-2 block w-fit rounded-sm bg-slate-700 px-2 py-1 text-sm font-semibold text-cyan-400">
             Linkedin

@@ -4,19 +4,17 @@ function About() {
   const data = useLoaderData();
   return (
     <section
-      className="h-screen w-full pt-8  text-white md:flex md:flex-col md:pt-14"
+      className="h-fit w-full text-white md:flex md:flex-col md:items-center md:pt-14"
       id="about"
     >
-      <h1 className="text-center text-3xl font-medium  md:text-4xl">
-        About me
-      </h1>
-      <div className="mt-10 flex flex-col items-center gap-8 md:w-9/12 md:flex-row md:self-center">
+      <h1 className="text-center text-3xl font-medium md:text-4xl">About me</h1>
+      <div className="mt-12 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-center">
         <img
           src={data.avatar_url}
           alt="My picture"
           className="h-24 w-24 rounded-full border-4 border-indigo-200 md:h-36 md:w-36"
         />
-        <ul className="w-10/12 md:w-full">
+        <ul className="w-10/12 md:w-9/12">
           <div className="mb-6 flex items-center">
             <span className="mr-3 text-lg">👋🏼</span>
             <li>
@@ -46,7 +44,7 @@ function About() {
               knowledge in a practical setting.
             </li>
           </div>
-          <div className="mb-6 flex items-center">
+          <div className="flex items-center">
             <span className="mr-3 text-lg">🧠</span>
             <li>
               In addition to Web Development, I am also interested in Machine
