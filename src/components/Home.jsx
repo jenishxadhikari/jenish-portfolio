@@ -30,7 +30,7 @@ function Home() {
       <button className="rounded-full border border-solid border-sky-400 px-3 py-2 text-xs font-semibold text-cyan-400 hover:bg-cyan-400/10 md:text-sm">
         Resume <MdArrowOutward className="md:text-md inline text-sm" />
       </button>
-      <div className="mt-12">
+      <div className="mt-5">
         <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-100" />
         <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-300" />
         <IoIosArrowDown className="duration-400 animate-ping text-4xl text-cyan-400/70 delay-700" />
